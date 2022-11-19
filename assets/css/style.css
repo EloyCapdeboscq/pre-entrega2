@@ -1,0 +1,304 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: Lato;
+    src: url(../fonts/Lato-Thin.ttf);
+}
+
+body{
+    background-color: rgba(7, 88, 108, 0.7);
+}
+
+.BodyInicio{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 80px auto auto 60px;
+    grid-template-areas: "nav    nav    nav    nav"
+                         "header header header header"
+                         "main   main   main   main"
+                         "footer footer footer footer";
+}
+
+.navbar{
+    font-family: Lato solid;
+    
+}
+
+nav{
+    grid-area: nav;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    font-family: Lato;
+}
+
+nav ul{
+    list-style-type: none;
+    display: flex;
+}
+
+nav li a {
+    text-decoration: none;
+    color: rgba(92, 217, 248, 0.947);
+    font-size: 18px;
+    padding: 10px 20px;
+
+}
+
+nav li a:hover{
+    text-decoration: underline;
+}
+
+.logo{
+    margin: 40px;
+    display: flex;
+    
+}
+
+.titulo{
+    margin-left: 20px;
+    margin-top: 5px;
+    color: rgb(92, 217, 248, 0.947);
+    font-family: Lato;
+}
+
+footer{
+    grid-area: footer;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    font-family: Lato;
+    color:rgb(92, 217, 248, 0.947);
+    padding: 5px;
+    
+}
+
+footer ul{
+    list-style-type: none;
+    display: flex;
+    font-size: 14px;
+}
+
+.footer-dias{
+    display: block;
+}
+
+.footer-logo{
+    margin-left: 40px;
+    margin-right: 10px;
+}
+
+.footer-telefono{
+    margin-right: 10px;
+}
+
+.footer-redes-ig{
+    margin-right: 10px;
+}
+
+.footer-redes-fb{
+    margin-right: 10px;
+}
+
+.footer-redes-tw{
+    margin-right: 40px;
+}
+
+.footer-numero-telefono{
+    font-size: 9.5px;
+    margin-top: 8px;
+}
+
+.footer-titulo-logo{
+    margin-top: 8px;
+    font-size: 9.5px;
+}
+
+
+.formulario{
+    font-family: Lato solid;
+    font-size: 16px;
+    width: 600px;
+    margin: 10px auto;
+    padding: 10px;
+}
+
+.formulario div{
+    margin: 10px 0px;
+}
+
+.btn{
+    border: none;
+    width: 300px;
+    margin: 10px;
+    border-radius: 5px;
+    background-color:  rgb(92, 217, 248, 0.947);
+    color: black;
+}
+
+
+.titulo-ubi{
+    background-image: url(../img/titulo-ubi.jpg);
+    height: 200px;
+    background-size: cover;
+    font-family: Lato solid;
+    font-size: 40px;
+    padding-top:120px;
+    padding-left: 180px;
+}
+
+.info-ubi{
+    margin: 100px;
+    width: 1200px;
+    display: flex;
+    flex-direction: row;
+    margin-left: 300px;
+}
+
+.mapa-ubi{
+    margin-left: 500px;
+    width: 2800px;
+}
+
+.texto-ubi{
+    margin-top: 140px;
+}
+
+
+.headerInicio{
+    grid-area: header;
+}
+
+.titulo-inicio{
+    background-image: url(../img/header-inicio.jpg);
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+    font-family: Lato solid;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.mainInicio{
+    grid-area: main;
+}
+
+
+.productos{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto;
+    justify-items: center;
+}
+
+.tarjeta{
+    background-color: black;
+    width: 300px;
+    height: 500px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.tarjeta__img{
+    width: 200px;
+    height: 200px;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+.titulo-productos{
+    margin: 15px;
+    font-family: Lato; 
+    font-size: 24px;
+}
+
+.tarjeta__titulo{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    margin-top: 50px;
+    font-size: 20px;
+    font-family: Lato;
+    color: white;
+}
+
+.tarjeta__precio{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    margin-top: 30px;
+    font-size: 20px;
+    font-family: Lato;
+    color: white;
+}
+
+.tarjeta__btn{
+   margin-top: 20px;
+   border: none;
+   border-radius: 2px;
+   background-color: rgba(7, 88, 108, 0.7);
+   height: 60px;
+   width: 250px;
+   margin-left: 25px;
+   font-family: Lato;
+   font-size: 20px ;
+   color: white;
+}
+
+
+.titulo-nosotros{
+    font-family: Lato;
+    font-size: 24px;
+    margin: 10px;
+
+}
+
+.nosotros-historia{
+    display: flex;
+}
+
+.nuestra-historia{
+    margin: 150px;
+    display: flex;
+    align-items: center;
+    font-family: Lato;
+}
+
+.nuestra-img{
+    margin: 100px;
+    width: 800px;
+}
+
+.nosotros-proyectos{
+    display: flex;
+    align-items: center;
+}
+
+.video-proyecto{
+    margin: 100px;
+    
+}
+
+.nuestras-ideas{
+    font-family: Lato;
+    display: flex;
+    align-items: center;
+}
+
+.img-proyecto{
+    margin: 100px;
+    width: 800px;
+}
+
+
