@@ -293,7 +293,7 @@ footer ul{
 
 .navbar ul li{
     display: flex;
-    justify-content: center;
+    justify-content: start;
     
 }
 
@@ -301,6 +301,10 @@ footer ul{
     font-family: Lato solid;
     font-size: 20px;
     color: rgb(0, 0, 0);
+}
+
+.collapse{
+    z-index: 1;
 }
 
 .card-title{
@@ -313,3 +317,8 @@ footer ul{
     justify-content: center;
 }
 
+
+.card-img-top:hover{
+    transform: translate(20px,10px);
+    transition: 1s;
+}
